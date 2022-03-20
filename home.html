@@ -1,28 +1,24 @@
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<div class="wrapper fadeInDown">
-    <div id="formContent">
-      <!-- Tabs Titles -->
-      <h2 class="active"> Sign In </h2>
-      <h2 class="inactive underlineHover">Sign Up </h2>
-  
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="./icon.svg" id="icon" alt="User Icon" />
-      </div>
-  
-      <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In">
-      </form>
-  
-      <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div>
-  
-    </div>
+<link rel="stylesheet" href="login.css">
+<form action="" method="">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember">Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#7e4b4b">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
